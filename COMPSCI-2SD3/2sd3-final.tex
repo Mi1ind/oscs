@@ -865,6 +865,13 @@ COUNTER = (getcheese->COUNTER).
 \end{lstlisting}
   \includegraphics[width = \linewidth]{a3q3.png}
 
+  \begin{lstlisting}
+    ||CHEESE_COUNTER = (Customers:CUSTOMER || Customers::COUNTER) >> {Meek.getcheese}.
+    progress BOLD = {Bold.getcheese}
+    progress MEEK = {Meek.getcheese}
+    \end{lstlisting}
+  Meek.getcheese get starved, as Bold.getcheese will always get executed.
+
   \section{Burger}
   A cook puts burgers in a pot. A client checks if there is at least one burger in the pot, and if so, the client must take one.
 
